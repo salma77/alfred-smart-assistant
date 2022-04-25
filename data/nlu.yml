@@ -1,0 +1,94 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - what's up??
+    - yo
+    - howdy
+    - hola
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: estimate_time
+  examples: |
+    - estimate time
+    - give me time estimates
+    - show estimates
+
+- intent: best_candidate
+  examples: |
+    - who's the best fit for this issue?
+    - who's fit for this task?
+    - who do you think will be ready to take this issue?
+    - who should I give this task to?
+    - who's free to take this issue?
+    - should I give this issue to {name} ?
+
+- intent: out_of_scope
+  examples: |
+    - ummmmm
+    - hmmmmm
+    - mmm I can't see what you're saying
+    - I am looking forward to my best friend's wedding. Do you have any tuxedo's?
+    - Can I?
+    - what is the square root of 5
+    - what is the meaning of life.
+    - Fridge Isn't Running
+    - my tv isn't working
+    - my washing machine isn't working
+    - what year is it
+    - what is the weather
+    - why is the sky blue
+    - blah blah blah
+    - no sizes, it's a phone

@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - estimate_time
+  - best_candidate
+  - out_of_scope
+
+entities:
+  - project_name
+  - release
+  - issues
+  - action
+
+slots:
+  project_name:
+    type: text
+    influence_conversation: true
+  release:
+    type: text
+    influence_conversation: true
+  issues:
+    type: list
+  action:
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am alfred, your virtual assistant."
+
+  utter_default:
+  - text: I don't think I understand. Can you try providing more detail?
+  - text: um, what did you just say to me?
+  - text: beep, boop, don't understand
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
